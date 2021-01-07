@@ -14,7 +14,9 @@ function App() {
     fetchUsers();
   }, []);
 
-  const handleClose = () => setShow(false);
+  const handleClose = () => {
+    resetModal();
+  }
   const handleShow = () => setShow(true);
 
   const processSheetData = (excelData) => {
